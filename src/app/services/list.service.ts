@@ -13,7 +13,7 @@ export class ListService {
    * @returns {*}  {ListItem[]}
    */
   public generateListItem(length: number): ListItem[] {
-    const newList = [];
+    let newList = [];
 
     for (let i = 0; i < length; i++) {
       const num = Math.floor(Math.random() * (1000 - -1000)) - 1000;

@@ -13,4 +13,9 @@ describe('ListService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should generate new array with given size', () => {
+    const array = service.generateListItem(5);
+    expect(array.length).toBe(5);
+  });
 });
