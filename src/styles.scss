@@ -1,8 +1,70 @@
+@import "/src/app/scss/colors.scss";
+
 // GLOBAL THEME
-* {
-  font-family: "Roboto", Helvetica, sans-serif;
+body {
+  margin: 0;
 }
 
-body {
-  margin: 2rem;
+article {
+  padding: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.mainContainer {
+  border: 1px solid $lightGray;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+button {
+  background-color: $orange;
+  border: none;
+  border-radius: 2rem;
+  color: $white;
+  font-weight: 500;
+  font-size: large;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: $orange90;
+    cursor: pointer;
+  }
+
+  &.primary {
+    background-color: $white;
+    border: 2px solid $orange;
+    color: $orange;
+
+    &:hover {
+      background-color: $lightGray90;
+      cursor: pointer;
+    }
+  }
+}
+
+input {
+  border-radius: 1rem;
+  border: 2px solid $orange;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 2.5rem;
+
+  &:hover {
+    border: 2px solid $orange90;
+    cursor: pointer;
+  }
 }
