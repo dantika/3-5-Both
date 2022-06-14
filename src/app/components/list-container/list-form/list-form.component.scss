@@ -1,0 +1,30 @@
+@import "/src/app/scss/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  section {
+    margin-bottom: 1rem;
+
+    label {
+      font-weight: 600;
+    }
+
+    input {
+      border-radius: 1rem;
+      border: 2px solid $orange;
+      margin-left: 1rem;
+      padding: 0.5rem;
+      text-align: center;
+      width: 2.5rem;
+
+      &:hover {
+        border: 2px solid $orange90;
+        cursor: pointer;
+      }
+    }
+  }
+}

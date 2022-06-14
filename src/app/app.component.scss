@@ -1,3 +1,6 @@
+@import "/src/app/scss/colors.scss";
+
 :host {
   font-family: "Roboto", Helvetica, sans-serif;
+  color: $darkGray;
 }

@@ -1,0 +1,9 @@
+:host {
+  width: 100%;
+
+  ul {
+    overflow-y: auto;
+    max-height: 21rem;
+    margin-bottom: 0;
+  }
+}

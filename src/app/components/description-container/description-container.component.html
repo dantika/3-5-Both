@@ -1,5 +1,5 @@
-<article>
-  <section>
+<article class="mainContainer">
+  <section class="textCenter">
     <h3>Description</h3>
     <p>
       Cet outil génère une liste de nombres entiers aléatoires d'une longueur
@@ -8,26 +8,18 @@
       Il va également vérifier si le nombre est divisible par 3, 5 ou les deux.
     </p>
   </section>
-
+  <hr />
   <section>
     <h3>Exemple</h3>
     <p>
-      <span>
-        Divisible par 3:&nbsp;<app-list-item
-          [item]="exempleItem1"
-        ></app-list-item>
-      </span>
+      <span> Divisible par 3:&nbsp; </span
+      ><app-list-item [item]="exempleItem1"></app-list-item>
       <br />
-      <span>
-        Divisible par 5:&nbsp;<app-list-item
-          [item]="exempleItem2"
-        ></app-list-item>
-      </span>
+      <span> Divisible par 5:&nbsp; </span
+      ><app-list-item [item]="exempleItem2"></app-list-item>
       <br />
-      <span>
-        Divisible par les deux:&nbsp;
-        <app-list-item [item]="exempleItem3"></app-list-item>
-      </span>
+      <span> Divisible par les deux:&nbsp; </span>
+      <app-list-item [item]="exempleItem3"></app-list-item>
     </p>
   </section>
 </article>
