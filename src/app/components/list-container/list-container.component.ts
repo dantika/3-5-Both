@@ -1,4 +1,4 @@
-import { Component, OnInit, Provider } from '@angular/core';
+import { Component, Provider } from '@angular/core';
 import { ListItem } from 'src/app/models/list-item.model';
 import { ListService } from 'src/app/services/list.service';
 
@@ -7,13 +7,15 @@ import { ListService } from 'src/app/services/list.service';
   templateUrl: './list-container.component.html',
   styleUrls: ['./list-container.component.scss'],
 })
-export class ListContainerComponent implements OnInit {
+export class ListContainerComponent {
   itemList: ListItem[] = [];
 
   constructor(private ListService: ListService) {}
 
-  ngOnInit(): void {}
-
+  /**
+   * @description List length edit handler from list-form
+   * @param {number} event
+   */
   listLengthEvent(event: number) {
     this.itemList = this.ListService.generateListItem(event);
   }

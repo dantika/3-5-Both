@@ -1,8 +1,10 @@
 /**
- * @description List item model.
- * Availables properties are : number, byFive, byThree
+ * @description ListItem model.
+ * On creation, complete byFive and byThree properties by checking if number can be divide by 5 and 3.
  * @param {number} number
- * @export
+ * @property {number} number
+ * @property {boolean} byFive
+ * @property {boolean} byThree
  * @class ListItem
  */
 export class ListItem {

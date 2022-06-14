@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ListItem } from 'src/app/models/list-item.model';
 
 @Component({
@@ -6,12 +6,10 @@ import { ListItem } from 'src/app/models/list-item.model';
   templateUrl: './description-container.component.html',
   styleUrls: ['./description-container.component.scss'],
 })
-export class DescriptionContainerComponent implements OnInit {
+export class DescriptionContainerComponent {
   exempleItem1: ListItem = new ListItem(6);
   exempleItem2: ListItem = new ListItem(10);
   exempleItem3: ListItem = new ListItem(15);
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

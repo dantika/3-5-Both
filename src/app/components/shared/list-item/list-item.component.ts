@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ListItem } from 'src/app/models/list-item.model';
 
 @Component({
@@ -6,10 +6,8 @@ import { ListItem } from 'src/app/models/list-item.model';
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.scss'],
 })
-export class ListItemComponent implements OnInit {
+export class ListItemComponent {
   @Input() item: ListItem = new ListItem(0);
 
   constructor() {}
-
-  ngOnInit(): void {}
 }
