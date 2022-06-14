@@ -1,29 +1,33 @@
 <article>
-  <h3>Description</h3>
-  <p>
-    Cet outil génère une liste de nombres entiers aléatoirement d'une définie
-    par l'utilisateur comprise entre 1 et 100.
-    <br />
-    Il va également vérifier si le nombre est divisible par 3, 5 ou les deux.
-  </p>
+  <section>
+    <h3>Description</h3>
+    <p>
+      Cet outil génère une liste de nombres entiers aléatoirement d'une définie
+      par l'utilisateur comprise entre 1 et 100.
+      <br />
+      Il va également vérifier si le nombre est divisible par 3, 5 ou les deux.
+    </p>
+  </section>
 
-  <h3>Exemple</h3>
-  <p>
-    <span class="inline">
-      Divisible par 3:&nbsp;<app-list-item
-        [item]="exempleItem1"
-      ></app-list-item>
-    </span>
-    <br />
-    <span class="inline">
-      Divisible par 5:&nbsp;<app-list-item
-        [item]="exempleItem2"
-      ></app-list-item>
-    </span>
-    <br />
-    <span class="inline">
-      Divisible par les deux:&nbsp;
-      <app-list-item [item]="exempleItem3"></app-list-item>
-    </span>
-  </p>
+  <section>
+    <h3>Exemple</h3>
+    <p>
+      <span>
+        Divisible par 3:&nbsp;<app-list-item
+          [item]="exempleItem1"
+        ></app-list-item>
+      </span>
+      <br />
+      <span>
+        Divisible par 5:&nbsp;<app-list-item
+          [item]="exempleItem2"
+        ></app-list-item>
+      </span>
+      <br />
+      <span>
+        Divisible par les deux:&nbsp;
+        <app-list-item [item]="exempleItem3"></app-list-item>
+      </span>
+    </p>
+  </section>
 </article>

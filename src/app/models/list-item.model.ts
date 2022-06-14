@@ -1,3 +1,10 @@
+/**
+ * @description List item model.
+ * Availables properties are : number, byFive, byThree
+ * @param {number} number
+ * @export
+ * @class ListItem
+ */
 export class ListItem {
   public byThree: boolean;
   public byFive: boolean;
@@ -7,11 +14,11 @@ export class ListItem {
     this.byFive = this.divByFive(number);
   }
 
-  divByThree(num: number): boolean {
+  private divByThree(num: number): boolean {
     return num % 3 === 0;
   }
 
-  divByFive(num: number): boolean {
+  private divByFive(num: number): boolean {
     return num % 5 === 0;
   }
 }
