@@ -1,1 +1,11 @@
-<p>list-form works!</p>
+<section>
+  <label for="inputLength">Longeur de la liste: </label>
+  <input
+    id="inputLength"
+    name="inputLength"
+    type="number"
+    (input)="editInput($event)"
+    [formControl]="lengthInput"
+  />
+  <button (click)="submitLength()">Generate list</button>
+</section>

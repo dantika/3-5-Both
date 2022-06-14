@@ -1,1 +1,10 @@
-<app-list-item></app-list-item>
+<article>
+  <section>
+    <h3>Résultat</h3>
+    <ul>
+      <li *ngFor="let item of itemList">
+        <app-list-item [item]="item"></app-list-item>
+      </li>
+    </ul>
+  </section>
+</article>

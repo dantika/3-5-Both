@@ -1,2 +1,6 @@
-<app-list-form></app-list-form>
-<app-list-display></app-list-display>
+<app-list-form (listLengthEvent)="listLengthEvent($event)"></app-list-form>
+
+<ng-template [ngIf]="itemList.length > 0">
+  <button (click)="resetList()">Reset list</button>
+  <app-list-display [itemList]="itemList"></app-list-display>
+</ng-template>
