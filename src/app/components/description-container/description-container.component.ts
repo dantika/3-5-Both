@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListItem } from 'src/app/models/list-item.model';
 
 @Component({
   selector: 'app-description-container',
@@ -6,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./description-container.component.scss'],
 })
 export class DescriptionContainerComponent implements OnInit {
-  exempleItem1 = 'exempleItem1';
-  exempleItem2 = 'exempleItem2';
-  exempleItem3 = 'exempleItem3';
+  exempleItem1: ListItem = new ListItem(6);
+  exempleItem2: ListItem = new ListItem(10);
+  exempleItem3: ListItem = new ListItem(15);
 
   constructor() {}
 

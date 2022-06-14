@@ -5,12 +5,4 @@ import { Injectable } from '@angular/core';
 })
 export class ListService {
   constructor() {}
-
-  divBy3(num: number): boolean {
-    return num % 3 === 0;
-  }
-
-  divBy5(num: number): boolean {
-    return num % 5 === 0;
-  }
 }

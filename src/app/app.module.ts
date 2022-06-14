@@ -7,8 +7,8 @@ import { DescriptionContainerComponent } from './components/description-containe
 import { HeaderComponent } from './components/header/header.component';
 import { ListContainerComponent } from './components/list-container/list-container.component';
 import { ListDisplayComponent } from './components/list-container/list-display/list-display.component';
-import { ListItemComponent } from './components/list-container/list-display/list-item/list-item.component';
 import { ListFormComponent } from './components/list-container/list-form/list-form.component';
+import { ListItemComponent } from './components/shared/list-item/list-item.component';
 import { ListService } from './services/list.service';
 
 @NgModule({
