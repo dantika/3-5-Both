@@ -1,0 +1,10 @@
+@import "src/app/scss/colors.scss";
+
+:host {
+  font-weight: bold;
+  span {
+    &.gest {
+      color: $orange;
+    }
+  }
+}

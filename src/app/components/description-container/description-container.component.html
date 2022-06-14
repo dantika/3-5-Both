@@ -9,11 +9,21 @@
 
   <h3>Exemple</h3>
   <p>
-    Divisible par 3: <app-list-item [item]="exempleItem1"></app-list-item>
+    <span class="inline">
+      Divisible par 3:&nbsp;<app-list-item
+        [item]="exempleItem1"
+      ></app-list-item>
+    </span>
     <br />
-    Divisible par 5: <app-list-item [item]="exempleItem2"></app-list-item>
+    <span class="inline">
+      Divisible par 5:&nbsp;<app-list-item
+        [item]="exempleItem2"
+      ></app-list-item>
+    </span>
     <br />
-    Divisible par les deux:
-    <app-list-item [item]="exempleItem3"></app-list-item>
+    <span class="inline">
+      Divisible par les deux:&nbsp;
+      <app-list-item [item]="exempleItem3"></app-list-item>
+    </span>
   </p>
 </article>

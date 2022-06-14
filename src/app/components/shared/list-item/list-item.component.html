@@ -1,5 +1,3 @@
-<p>
-  {{ item.number }}&nbsp;
-  <span class="gest" *ngIf="item.byThree">Gest</span>
-  <span class="form" *ngIf="item.byFive">Form</span>
-</p>
+{{ item.number }}&nbsp;
+<span class="gest" *ngIf="item.byThree">Gest</span>
+<span *ngIf="item.byFive">Form</span>
